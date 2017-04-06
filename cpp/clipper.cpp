@@ -4611,8 +4611,8 @@ std::ostream& operator <<(std::ostream &s, const Path &p)
   if (p.empty()) return s;
   Path::size_type last = p.size() -1;
   for (Path::size_type i = 0; i < last; i++)
-    s << "(" << p[i].X << "," << p[i].Y << "), \n";
-  s << "(" << p[last].X << "," << p[last].Y << ")\n";
+  s << p[i].X << "," << p[i].Y << ";\n";
+  s << p[last].X << "," << p[last].Y << "\n";
   return s;
 }
 //------------------------------------------------------------------------------
