@@ -15,11 +15,12 @@ int main()
 	IntPoint(258,88)  <<
 	IntPoint(440,129) <<
 	IntPoint(370,196) <<
-	IntPoint(372,275);
+	IntPoint(372,275) <<
+	IntPoint(348,257);
 
 	ClipperOffset co;
-	co.AddPath(subj, jtRound, etClosedPolygon);
-	co.Execute(solution, 2.0);
+	co.AddPath(subj, jtSquare, etClosedPolygon);
+	co.Execute(solution, -2.0);
 
 	std::cout << "solution" << std::endl;
 	std::cout << solution;// << std::endl;
