@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "SConscript*": "python",
-        "SConstruct*": "python",
-        "iostream": "cpp"
-    }
-}
